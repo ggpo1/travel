@@ -1,0 +1,9 @@
+C:\Users\johnl\Desktop\travel\.mono\temp\bin\ExportDebug\Travel.dll
+C:\Users\johnl\Desktop\travel\.mono\temp\bin\ExportDebug\Travel.pdb
+C:\Users\johnl\Desktop\travel\.mono\temp\obj\ExportDebug\Travel.csproj.AssemblyReference.cache
+C:\Users\johnl\Desktop\travel\.mono\temp\obj\ExportDebug\Travel.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\johnl\Desktop\travel\.mono\temp\obj\ExportDebug\Travel.AssemblyInfoInputs.cache
+C:\Users\johnl\Desktop\travel\.mono\temp\obj\ExportDebug\Travel.AssemblyInfo.cs
+C:\Users\johnl\Desktop\travel\.mono\temp\obj\ExportDebug\Travel.csproj.CoreCompileInputs.cache
+C:\Users\johnl\Desktop\travel\.mono\temp\obj\ExportDebug\Travel.dll
+C:\Users\johnl\Desktop\travel\.mono\temp\obj\ExportDebug\Travel.pdb

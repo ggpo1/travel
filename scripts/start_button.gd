@@ -1,18 +1,16 @@
 extends Button
 
+const orderNum = 0;
 
-# Declare member variables here. Examples:
-# var a = 2
-# var b = "text"
-
-
-# Called when the node enters the scene tree for the first time.
 func _ready():
-	print("hello from button ready");
+	Utils.setMenuButtonAppearance(self, Consts.MAIN_MENU_BUTTONS_COUNT, self.orderNum);
+	self.subscribe();
+
+func handleRootResize():
+	Utils.setMenuButtonAppearance(self, Consts.MAIN_MENU_BUTTONS_COUNT, self.orderNum);
+
+func subscribe():
+	get_tree().get_root().connect("size_changed", self, "handleRootResize");
 
 func _click():
-	print("click");
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass
+	Utils.setScene(Enums.Scenes.another1);

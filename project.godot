@@ -13,6 +13,18 @@ config_version=4
 config/name="Travel"
 run/main_scene="res://scenes/root.tscn"
 config/icon="res://icon.png"
+config/macos_native_icon="res://build/icon.ico"
+
+[autoload]
+
+Consts="*res://scripts/global/global_consts.gd"
+Utils="*res://scripts/global/global_utils.gd"
+Store="*res://scripts/global/global_store.gd"
+Enums="*res://scripts/global/global_enums.gd"
+
+[display]
+
+window/size/resizable.Android=false
 
 [gui]
 

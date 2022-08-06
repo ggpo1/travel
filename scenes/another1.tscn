@@ -1,0 +1,24 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://icons/brick-wall.svg" type="Texture" id=1]
+
+[sub_resource type="ArrayMesh" id=1]
+surfaces/0 = {
+"aabb": AABB( -256, -256, 0, 512, 512, 0 ),
+"array_data": PoolByteArray( 0, 0, 128, 67, 0, 0, 128, 67, 0, 0, 128, 63, 0, 0, 128, 63, 0, 0, 128, 195, 0, 0, 128, 67, 0, 0, 0, 0, 0, 0, 128, 63, 0, 0, 128, 195, 0, 0, 128, 195, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 128, 67, 0, 0, 128, 195, 0, 0, 128, 63, 0, 0, 0, 0 ),
+"array_index_data": PoolByteArray( 3, 0, 0, 0, 1, 0, 1, 0, 2, 0, 3, 0 ),
+"blend_shape_data": [  ],
+"format": 262417,
+"index_count": 6,
+"primitive": 4,
+"skeleton_aabb": [  ],
+"vertex_count": 4
+}
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Brick-wall" type="MeshInstance2D" parent="."]
+position = Vector2( 513.75, 299.25 )
+scale = Vector2( 1.99316, 1.16699 )
+mesh = SubResource( 1 )
+texture = ExtResource( 1 )
