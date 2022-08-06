@@ -18,6 +18,5 @@ func setMenuButtonAppearance(button: Button, buttonsCount: int, orderNum: int):
 	button.set_position(Vector2(buttonX, buttonY));
 
 func setScene(sceneName: String):
-	var scene = load("res://scenes/" + sceneName + ".tscn").instance();
-	get_tree().get_root().add_child(scene);
+	get_tree().change_scene("res://scenes/" + sceneName + ".tscn");
 	

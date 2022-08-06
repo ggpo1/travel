@@ -13,4 +13,4 @@ func subscribe():
 	get_tree().get_root().connect("size_changed", self, "handleRootResize");
 
 func _click():
-	Utils.setScene(Enums.Scenes.another1);
+	Utils.setScene(Enums.Scenes.world);
