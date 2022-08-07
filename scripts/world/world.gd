@@ -10,7 +10,6 @@ func handleStoreUpdate(state):
 	print("updated state ", state);
 
 func _ready():
-	pass;
 	Store.subscribe(funcref(self, "handleStoreUpdate"));
 
 func _input(event):
@@ -20,8 +19,6 @@ func _input(event):
 		# print(event.button_index);
 		# print(event.button_mask);
 		Store.setIsMousedown(true);
-		return;
-
-	if event is InputEventMouseMotion:
+	elif event is InputEventMouseMotion:
 		# move
 		pass;

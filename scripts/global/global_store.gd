@@ -13,7 +13,8 @@ func subscribe(listener):
 
 func dispatchUpdate():
 	for myName in self.listeners:
-		myName.call(self.state);
+		pass
+		# myName.call(self.state);
 
 func setIsMousedown(isMousedown):
 	self.state.isMousedown = isMousedown;
