@@ -1,11 +1,21 @@
 extends Node
 
+var listeners = [];
 var state = {
-	"count": 1,
+	"isMousedown": false,
 };
 
 func _ready():
 	print("[READY]: Store");
 
-func setCount(count):
-	self.state.count = count;
+func subscribe(listener):
+	self.listeners.append(listener);
+
+func dispatchUpdate():
+	for myName in self.listeners:
+		myName.call(self.state);
+
+func setIsMousedown(isMousedown):
+	self.state.isMousedown = isMousedown;
+	self.dispatchUpdate();
+	

@@ -7,9 +7,9 @@ func _ready():
 
 func setMenuButtonAppearance(button: Button, buttonsCount: int, orderNum: int):
 	var viewport = get_viewport();
-	var viewPortWidth = viewport.size[0];
-	var viewportHeight = viewport.size[1];
-	var buttonWidth = viewport.size[0] / 2;
+	var viewPortWidth = viewport.size.x;
+	var viewportHeight = viewport.size.y;
+	var buttonWidth = viewPortWidth / 2;
 	var buttonHeight = viewportHeight / 11;
 	var fullHeight = buttonHeight * buttonsCount;
 	var buttonX = (viewPortWidth / 2 - buttonWidth / 2);
@@ -19,4 +19,5 @@ func setMenuButtonAppearance(button: Button, buttonsCount: int, orderNum: int):
 
 func setScene(sceneName: String):
 	get_tree().change_scene("res://scenes/" + sceneName + ".tscn");
+	print("[SCENE]: ", sceneName)
 	
