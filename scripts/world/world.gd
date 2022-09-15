@@ -11,14 +11,17 @@ func handleStoreUpdate(state):
 
 func _ready():
 	Store.subscribe(funcref(self, "handleStoreUpdate"));
+	VisualServer.set_default_clear_color(Consts.theme.world.background);
+	print(Store.state);
 
 func _input(event):
 	   # Mouse in viewport coordinates.
 	if event is InputEventMouseButton:
+		pass;
 		# click
 		# print(event.button_index);
 		# print(event.button_mask);
-		Store.setIsMousedown(true);
+		# Store.setIsMousedown(true);
 	elif event is InputEventMouseMotion:
 		# move
 		pass;

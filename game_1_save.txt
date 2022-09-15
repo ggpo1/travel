@@ -1,0 +1,14 @@
+{
+  "gameId": 1214244123,
+  "inventory": [],
+  "person": {
+	"level": 1,
+	"health": 100,
+	"armor": 100
+  },
+  "person_location": {
+	"chunkId": 12132941293,
+	"x": 0,
+	"y": 0
+  }
+}
