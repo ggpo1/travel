@@ -21,6 +21,7 @@ Consts="*res://scripts/global/global_consts.gd"
 Utils="*res://scripts/global/global_utils.gd"
 Store="*res://scripts/global/global_store.gd"
 Enums="*res://scripts/global/global_enums.gd"
+Chunks="*res://scripts/global/global_chunks.gd"
 SaveLoad="*res://scripts/global/global_save_load.gd"
 
 [display]

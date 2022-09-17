@@ -21,3 +21,19 @@ func setScene(sceneName: String):
 	get_tree().change_scene("res://scenes/" + sceneName + ".tscn");
 	print("[SCENE]: ", sceneName)
 	
+func getNewPlainGame():
+	return {
+		"gameId": -1,
+		"title": "",
+		"inventory": [],
+		"person": {
+			"level": 1,
+			"health": 100,
+			"armor": 100
+		},
+		"person_location": {
+			"chunkId": 12132941293,
+			"x": 0,
+			"y": 0
+		}
+	}

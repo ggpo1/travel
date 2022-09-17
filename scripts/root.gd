@@ -15,16 +15,13 @@ extends Node2D
 	#   }
 	# }
 
-# save/load module
-	# inventory
-	# person info
-	# location info
-	# game settings
+# chunk system
 # inventory module
 # person info module
 
 func _ready():
 	OS.set_window_title("Travel");
 	VisualServer.set_default_clear_color(Consts.theme.menu.background);
+	SaveLoad.getSavedGames();
 	Store.setGame(SaveLoad.loadGame(1));
 	# OS.window_maximized = true;

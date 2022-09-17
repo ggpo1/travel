@@ -4,6 +4,7 @@ var listeners = [];
 var state = {
 	"isMousedown": false,
 	"game": null,
+	"chunks_map": null,
 };
 
 func _ready():

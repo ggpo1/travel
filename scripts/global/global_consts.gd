@@ -2,6 +2,7 @@ extends Node
 
 const MAIN_MENU_BUTTONS_COUNT = 3;
 const CHUNK_SIZE = 10;
+const SAVE_BASE_PATH = "res://saves/";
 
 const theme = {
 	"menu": {

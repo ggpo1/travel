@@ -13,4 +13,5 @@ func subscribe():
 	get_tree().get_root().connect("size_changed", self, "handleRootResize");
 
 func _click():
+	Store.setGame(Utils.getNewPlainGame());
 	Utils.setScene(Enums.Scenes.world);

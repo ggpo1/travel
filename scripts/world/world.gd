@@ -12,7 +12,6 @@ func handleStoreUpdate(state):
 func _ready():
 	Store.subscribe(funcref(self, "handleStoreUpdate"));
 	VisualServer.set_default_clear_color(Consts.theme.world.background);
-	print(Store.state);
 
 func _input(event):
 	   # Mouse in viewport coordinates.
